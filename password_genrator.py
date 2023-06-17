@@ -52,8 +52,10 @@ if __name__ == "__main__":
     user_choice = check_int(input("Enter Maximum Length of your password: "))
     special_words = input("Do you Want Any Special Charachter? (y/n): ").lower() == "y"
     number = input("Do you Want Any number in Your Password? (y/n): ").lower() == "y"
+    small = input("Do you Want To Use Small Charachters (a,b,c,d..etc) ? (y/n): ").lower() == "y"
+    Capital = input("Do you Want  To Use Capital Charachters in Your Password? (y/n): ").lower() == "y"
 
-    password_user = password_genrator(user_choice,special_words,number)
+    password_user = password_genrator(user_choice,special_words,number,small,Capital)
     print("\nGenrated Password is : ",password_user)
         
 
